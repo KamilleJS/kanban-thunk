@@ -29,3 +29,15 @@ export function getCards () {
             })
     }
 }
+
+export function deleteCard (cardId) {
+    return (dispatch) => {
+        axios.delete(`http://nazarov-kanban-server.herokuapp.com/card/${cardId}`)
+            .then(res => {
+                dispatch(getCards())
+            })
+            .catch(err => {
+                console.log("couldn't delete a card")
+            })
+    }
+}
