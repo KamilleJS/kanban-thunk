@@ -7,7 +7,7 @@ function Column(props){
         return(
         <div className="col text-capitalize" >
             <h3>{props.column.status}</h3>
-            {props.cards.map(el => <CardItem key={el._id} card={el}/>)}
+            {props.cards.filter(el => el.status === props.column.status).map(el => <CardItem key={el._id} card={el}/>)}
         </div>
     );
 }
