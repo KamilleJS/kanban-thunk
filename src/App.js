@@ -1,7 +1,7 @@
 import './App.css';
 import { connect } from "react-redux";
-import {getCards, getStatuses} from "./redux/actions";
-import {useEffect} from "react";
+import { getCards, getStatuses } from "./redux/actions";
+import { useEffect, useState } from "react";
 import Column from "./Column";
 import 'bootstrap/dist/css/bootstrap.css'
 
