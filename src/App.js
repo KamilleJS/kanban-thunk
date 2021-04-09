@@ -3,7 +3,11 @@ import { connect } from "react-redux";
 import { getCards, getStatuses } from "./redux/actions";
 import { useEffect, useState } from "react";
 import Column from "./Column";
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import { Button, Container, Row } from "reactstrap";
+import CreateModal from "./CreateTaskModal";
+import CreateStatusModal from "./CreateStatusModal";
+import ColumnNull from "./ColumnNull";
 
 function App(props) {
     useEffect(() => {
