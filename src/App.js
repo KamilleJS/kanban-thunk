@@ -6,7 +6,6 @@ import Column from "./Column";
 import 'bootstrap/dist/css/bootstrap.css'
 
 function App(props) {
-
     useEffect(() => {
         props.getStatuses();
         props.getCards();

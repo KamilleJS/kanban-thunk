@@ -6,9 +6,7 @@ import {deleteCard} from "./redux/actions";
 
 const ModalDelete = (props) => {
     const [modal, setModal] = useState(false);
-
     const toggle = () => setModal(!modal);
-
     const deleteButtonHandler = () => {
         props.deleteCardItem(props.id);
         toggle();

@@ -1,9 +1,7 @@
 import { connect } from "react-redux";
-
 import CardItem from "./CardItem";
 
 function Column(props){
-
         return(
         <div className="col text-capitalize" >
             <h3>{props.column.status}</h3>
